@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard estático de ejemplo para analizar ventas, comisiones y campañas de una influencer.">
+    <title>Órbita | Dashboard de campañas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-zinc-50 font-sans text-zinc-900 antialiased">
+    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-zinc-900 focus:p-3 focus:text-white">Saltar al contenido</a>
+    <header class="border-b border-zinc-200 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <a href="#inicio" class="w-fit rounded text-2xl font-bold tracking-normal focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700" aria-label="Órbita, inicio">órbita<span class="text-emerald-700">.</span></a>
+        <nav aria-label="Navegación principal" class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium">
+          <a href="#kpis" class="rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Resumen</a>
+          <a href="#drivers" class="rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Drivers</a>
+          <a href="#operaciones" class="rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Operaciones</a>
+        </nav>
+        <p class="text-sm text-zinc-600">Informe mensual <span class="font-semibold text-zinc-900">/ Septiembre 2026</span></p>
+      </div>
+    </header>
+
+    <main id="contenido" class="mx-auto max-w-7xl space-y-12 px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
+      <div id="inicio" class="flex flex-col justify-between gap-5 border-b border-zinc-200 pb-8 md:flex-row md:items-end">
+        <div class="min-w-0">
+          <p class="mb-3 text-sm font-semibold text-emerald-800">ANALÍTICA DE CREADORA</p>
+          <h1 class="font-serif text-4xl leading-tight sm:text-5xl">El impacto de tus campañas</h1>
+          <p class="mt-3 max-w-2xl text-base leading-relaxed text-zinc-600">Ventas, comunidad y comisiones en una misma perspectiva.</p>
+        </div>
+        <p class="w-fit shrink-0 rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm font-medium text-amber-900">Datos de ejemplo · Septiembre de 2026</p>
+      </div>
+
+      <section id="kpis" aria-labelledby="titulo-kpis" class="scroll-mt-6">
+        <div class="mb-5 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="titulo-kpis" class="text-2xl font-semibold">01 / Indicadores clave</h2>
+          <p class="text-sm text-zinc-600">Comisión fija del 15 % por venta</p>
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5">
+            <h3 class="text-sm font-medium text-zinc-600">Ventas</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">100</p>
+            <p class="mt-3 text-sm text-zinc-600">Unidades vendidas · 3 productos</p>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5">
+            <h3 class="text-sm font-medium text-zinc-600">Facturación atribuida</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">7.800 €</p>
+            <p class="mt-3 text-sm text-zinc-600">Importe de las ventas, no ingreso personal</p>
+          </article>
+          <article class="min-w-0 rounded-lg border border-emerald-800 bg-emerald-800 p-5 text-white">
+            <h3 class="text-sm font-medium">Tus comisiones</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">1.170 €</p>
+            <p class="mt-3 text-sm">15 % de 7.800 € facturados</p>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5">
+            <h3 class="text-sm font-medium text-zinc-600">CTR · tasa de clics</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">4 %</p>
+            <p class="mt-3 text-sm text-zinc-600">4.000 clics / 100.000 impresiones</p>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5">
+            <h3 class="text-sm font-medium text-zinc-600">Conversión a compra</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">2,5 %</p>
+            <p class="mt-3 text-sm text-zinc-600">100 compras / 4.000 clics</p>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5">
+            <h3 class="text-sm font-medium text-zinc-600">Engagement</h3>
+            <p class="mt-4 text-4xl font-semibold tabular-nums">5 %</p>
+            <p class="mt-3 text-sm text-zinc-600">5.000 interacciones / 100.000 impresiones</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="drivers" aria-labelledby="titulo-drivers" class="scroll-mt-6">
+        <div class="mb-5 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="titulo-drivers" class="text-2xl font-semibold">02 / Qué mueve los resultados</h2>
+          <p class="text-sm text-zinc-600">Del alcance a la compra</p>
+        </div>
+        <div class="grid min-w-0 grid-cols-1 gap-6 md:grid-cols-2">
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5 sm:p-6">
+            <h3 class="text-lg font-semibold">Funnel de conversión</h3>
+            <ol class="mt-6 space-y-5">
+              <li>
+                <div class="flex flex-wrap justify-between gap-2 text-sm"><span>01 · Impresiones</span><strong class="tabular-nums">100.000</strong></div>
+                <meter min="0" max="100000" value="100000" aria-label="Impresiones: 100.000 de 100.000" class="mt-2 block h-4 w-full accent-emerald-700">100 %</meter>
+                <p class="mt-1 text-xs text-zinc-600">100 % del alcance registrado</p>
+              </li>
+              <li>
+                <div class="flex flex-wrap justify-between gap-2 text-sm"><span>02 · Clics</span><strong class="tabular-nums">4.000</strong></div>
+                <meter min="0" max="100000" value="4000" aria-label="Clics: 4.000, el 4 % de las impresiones" class="mt-2 block h-4 w-full accent-emerald-700">4 %</meter>
+                <p class="mt-1 text-xs text-zinc-600">4 % de las impresiones</p>
+              </li>
+              <li>
+                <div class="flex flex-wrap justify-between gap-2 text-sm"><span>03 · Compras</span><strong class="tabular-nums">100</strong></div>
+                <meter min="0" max="100000" value="100" aria-label="Compras: 100, el 0,1 % de las impresiones" class="mt-2 block h-4 w-full accent-emerald-700">0,1 %</meter>
+                <p class="mt-1 text-xs text-zinc-600">0,1 % de las impresiones · 2,5 % de los clics</p>
+              </li>
+            </ol>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5 sm:p-6">
+            <h3 class="text-lg font-semibold">Rendimiento por plataforma</h3>
+            <p class="mt-1 text-sm text-zinc-600">Participación en las 100 ventas</p>
+            <ul class="mt-6 space-y-5">
+              <li><div class="flex flex-wrap justify-between gap-2 text-sm"><span>Instagram</span><strong>40 ventas · 40 %</strong></div><meter min="0" max="100" value="40" aria-label="Instagram: 40 % de las ventas" class="mt-2 block h-4 w-full accent-emerald-700">40 %</meter></li>
+              <li><div class="flex flex-wrap justify-between gap-2 text-sm"><span>TikTok</span><strong>35 ventas · 35 %</strong></div><meter min="0" max="100" value="35" aria-label="TikTok: 35 % de las ventas" class="mt-2 block h-4 w-full accent-emerald-700">35 %</meter></li>
+              <li><div class="flex flex-wrap justify-between gap-2 text-sm"><span>YouTube</span><strong>25 ventas · 25 %</strong></div><meter min="0" max="100" value="25" aria-label="YouTube: 25 % de las ventas" class="mt-2 block h-4 w-full accent-emerald-700">25 %</meter></li>
+            </ul>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5 sm:p-6">
+            <h3 class="text-lg font-semibold">Rendimiento por producto</h3>
+            <p class="mt-1 text-sm text-zinc-600">Comisiones generadas</p>
+            <ul class="mt-5 divide-y divide-zinc-200 text-sm">
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span>Producto A · 40 ventas</span><strong class="tabular-nums">300 €</strong></li>
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span>Producto B · 25 ventas</span><strong class="tabular-nums">450 €</strong></li>
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span>Producto C · 35 ventas</span><strong class="tabular-nums">420 €</strong></li>
+            </ul>
+          </article>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5 sm:p-6">
+            <h3 class="text-lg font-semibold">Calidad y comunidad</h3>
+            <dl class="mt-5 divide-y divide-zinc-200 text-sm">
+              <div class="flex flex-wrap justify-between gap-2 py-3"><dt>Visitas cualificadas</dt><dd class="font-semibold">3.200 / 4.000 · 80 %</dd></div>
+              <div class="flex flex-wrap justify-between gap-2 py-3"><dt>Actividad del mes</dt><dd class="font-semibold">12 publicaciones</dd></div>
+              <div class="flex flex-wrap justify-between gap-2 py-3"><dt>Interacciones</dt><dd class="font-semibold">5.000 · Engagement 5 %</dd></div>
+            </dl>
+            <p class="mt-3 text-xs leading-relaxed text-zinc-600">Criterio simulado de calidad: visita con consulta de una ficha de producto. Se supone una visita por clic.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="operaciones" aria-labelledby="titulo-operaciones" class="scroll-mt-6 space-y-6">
+        <div>
+          <h2 id="titulo-operaciones" class="text-2xl font-semibold">03 / Detalles operativos</h2>
+          <p class="mt-2 text-sm text-zinc-600">Desglose del período completo. Una única campaña y plataforma atribuida a cada compra.</p>
+        </div>
+        <form aria-labelledby="titulo-filtros" class="border-y border-zinc-200 py-5">
+          <fieldset disabled aria-describedby="nota-filtros">
+            <legend id="titulo-filtros" class="text-sm font-semibold">Filtros de muestra · Sin funcionalidad</legend>
+            <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="min-w-0"><label for="periodo" class="mb-2 block text-sm font-medium">Período</label><select id="periodo" name="periodo" class="min-h-11 w-full min-w-0 rounded-md border border-zinc-300 bg-zinc-100 px-3 py-2 text-sm text-zinc-600 disabled:cursor-not-allowed"><option>Septiembre de 2026</option></select></div>
+              <div class="min-w-0"><label for="plataforma" class="mb-2 block text-sm font-medium">Plataforma</label><select id="plataforma" name="plataforma" class="min-h-11 w-full min-w-0 rounded-md border border-zinc-300 bg-zinc-100 px-3 py-2 text-sm text-zinc-600 disabled:cursor-not-allowed"><option>Todas las plataformas</option><option>Instagram</option><option>TikTok</option><option>YouTube</option></select></div>
+              <div class="min-w-0"><label for="producto" class="mb-2 block text-sm font-medium">Producto</label><select id="producto" name="producto" class="min-h-11 w-full min-w-0 rounded-md border border-zinc-300 bg-zinc-100 px-3 py-2 text-sm text-zinc-600 disabled:cursor-not-allowed"><option>Todos los productos</option><option>Producto A</option><option>Producto B</option><option>Producto C</option></select></div>
+            </div>
+          </fieldset>
+          <p id="nota-filtros" class="mt-3 text-xs text-zinc-600">Controles deshabilitados: los datos son estáticos y no se filtran.</p>
+        </form>
+
+        <div class="min-w-0">
+          <table class="w-full table-fixed border-collapse text-left text-xs tabular-nums sm:text-sm">
+            <caption class="pb-4 text-left text-lg font-semibold">Productos · Ventas y comisiones</caption>
+            <thead class="border-y border-zinc-200 bg-zinc-100 text-zinc-700"><tr><th scope="col" class="w-[28%] break-words px-1 py-3 sm:px-3">Producto / precio</th><th scope="col" class="w-[16%] break-words px-1 py-3 text-right sm:px-3">Ventas</th><th scope="col" class="w-[28%] break-words px-1 py-3 text-right sm:px-3">Facturación</th><th scope="col" class="w-[28%] break-words px-1 py-3 text-right sm:px-3">Comisión</th></tr></thead>
+            <tbody class="divide-y divide-zinc-200">
+              <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-3">Producto A <span class="block font-normal text-zinc-600">50 €</span></th><td class="px-1 py-4 text-right sm:px-3">40</td><td class="px-1 py-4 text-right sm:px-3">2.000 €</td><td class="px-1 py-4 text-right sm:px-3">300 €</td></tr>
+              <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-3">Producto B <span class="block font-normal text-zinc-600">120 €</span></th><td class="px-1 py-4 text-right sm:px-3">25</td><td class="px-1 py-4 text-right sm:px-3">3.000 €</td><td class="px-1 py-4 text-right sm:px-3">450 €</td></tr>
+              <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-3">Producto C <span class="block font-normal text-zinc-600">80 €</span></th><td class="px-1 py-4 text-right sm:px-3">35</td><td class="px-1 py-4 text-right sm:px-3">2.800 €</td><td class="px-1 py-4 text-right sm:px-3">420 €</td></tr>
+            </tbody>
+            <tfoot class="border-y border-zinc-300 bg-white font-semibold"><tr><th scope="row" class="px-1 py-3 sm:px-3">Total</th><td class="px-1 py-3 text-right sm:px-3">100</td><td class="px-1 py-3 text-right sm:px-3">7.800 €</td><td class="px-1 py-3 text-right sm:px-3">1.170 €</td></tr></tfoot>
+          </table>
+          <p class="mt-3 text-xs leading-relaxed text-zinc-600">Comisión unitaria (15 %): Producto A, 7,50 €; Producto B, 18 €; Producto C, 12 €.</p>
+        </div>
+
+        <div class="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
+          <div class="min-w-0">
+            <table class="w-full table-fixed border-collapse text-left text-xs tabular-nums sm:text-sm">
+              <caption class="pb-4 text-left text-lg font-semibold">Plataformas · Atribución de ventas</caption>
+              <thead class="border-y border-zinc-200 bg-zinc-100 text-zinc-700"><tr><th scope="col" class="w-[30%] break-words px-1 py-3 sm:px-2">Plataforma</th><th scope="col" class="w-[20%] break-words px-1 py-3 text-right sm:px-2">Clics</th><th scope="col" class="w-[20%] break-words px-1 py-3 text-right sm:px-2">Ventas</th><th scope="col" class="w-[30%] break-words px-1 py-3 text-right sm:px-2">Comisión</th></tr></thead>
+              <tbody class="divide-y divide-zinc-200">
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">Instagram</th><td class="px-1 py-4 text-right sm:px-2">1.600</td><td class="px-1 py-4 text-right sm:px-2">40</td><td class="px-1 py-4 text-right sm:px-2">468 €</td></tr>
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">TikTok</th><td class="px-1 py-4 text-right sm:px-2">1.400</td><td class="px-1 py-4 text-right sm:px-2">35</td><td class="px-1 py-4 text-right sm:px-2">409,50 €</td></tr>
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">YouTube</th><td class="px-1 py-4 text-right sm:px-2">1.000</td><td class="px-1 py-4 text-right sm:px-2">25</td><td class="px-1 py-4 text-right sm:px-2">292,50 €</td></tr>
+              </tbody>
+              <tfoot class="border-y border-zinc-300 bg-white font-semibold"><tr><th scope="row" class="px-1 py-3 sm:px-2">Total</th><td class="px-1 py-3 text-right sm:px-2">4.000</td><td class="px-1 py-3 text-right sm:px-2">100</td><td class="px-1 py-3 text-right sm:px-2">1.170 €</td></tr></tfoot>
+            </table>
+            <p class="mt-3 text-xs leading-relaxed text-zinc-600">Impresiones: Instagram, 40.000; TikTok, 35.000; YouTube, 25.000. Cada plataforma registra un CTR del 4 % y una conversión del 2,5 %.</p>
+          </div>
+          <div class="min-w-0">
+            <table class="w-full table-fixed border-collapse text-left text-xs tabular-nums sm:text-sm">
+              <caption class="pb-4 text-left text-lg font-semibold">Campañas · Resumen mensual</caption>
+              <thead class="border-y border-zinc-200 bg-zinc-100 text-zinc-700"><tr><th scope="col" class="w-[44%] break-words px-1 py-3 sm:px-2">Campaña / canal</th><th scope="col" class="w-[20%] break-words px-1 py-3 text-right sm:px-2">Ventas</th><th scope="col" class="w-[36%] break-words px-1 py-3 text-right sm:px-2">Comisión</th></tr></thead>
+              <tbody class="divide-y divide-zinc-200">
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">Selección del mes <span class="block font-normal text-zinc-600">Instagram</span></th><td class="px-1 py-4 text-right sm:px-2">40</td><td class="px-1 py-4 text-right sm:px-2">468 €</td></tr>
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">Favoritos en vídeo <span class="block font-normal text-zinc-600">TikTok</span></th><td class="px-1 py-4 text-right sm:px-2">35</td><td class="px-1 py-4 text-right sm:px-2">409,50 €</td></tr>
+                <tr><th scope="row" class="break-words px-1 py-4 font-medium sm:px-2">Reseñas de septiembre <span class="block font-normal text-zinc-600">YouTube</span></th><td class="px-1 py-4 text-right sm:px-2">25</td><td class="px-1 py-4 text-right sm:px-2">292,50 €</td></tr>
+              </tbody>
+              <tfoot class="border-y border-zinc-300 bg-white font-semibold"><tr><th scope="row" class="px-1 py-3 sm:px-2">Total</th><td class="px-1 py-3 text-right sm:px-2">100</td><td class="px-1 py-3 text-right sm:px-2">1.170 €</td></tr></tfoot>
+            </table>
+            <p class="mt-3 text-xs leading-relaxed text-zinc-600">Campañas de ejemplo finalizadas. Las comisiones de campaña y plataforma representan las mismas ventas; no se suman entre sí.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 pt-2 md:grid-cols-2">
+          <aside aria-labelledby="titulo-alertas" class="min-w-0 rounded-lg border border-amber-300 bg-amber-50 p-5 sm:p-6">
+            <h3 id="titulo-alertas" class="text-lg font-semibold text-amber-950">Alertas del período</h3>
+            <ul class="mt-4 space-y-4 text-sm leading-relaxed text-amber-950">
+              <li><strong>Revisar el recorrido de compra.</strong> 3.900 clics no terminaron en compra (97,5 %). No implica necesariamente abandono de carrito.</li>
+              <li><strong>Revisar la calidad del tráfico.</strong> 800 visitas (20 %) no consultaron una ficha de producto según el criterio simulado.</li>
+              <li><strong>Sin comparación histórica.</strong> No hay datos previos para valorar mejoras o caídas.</li>
+            </ul>
+          </aside>
+          <article class="min-w-0 rounded-lg border border-zinc-200 bg-white p-5 sm:p-6">
+            <h3 class="text-lg font-semibold">Top productos</h3>
+            <p class="mt-1 text-sm text-zinc-600">Ordenados por comisión total</p>
+            <ol class="mt-4 divide-y divide-zinc-200 text-sm">
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span><span class="mr-2 text-zinc-500">01</span> Producto B</span><strong>450 €</strong></li>
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span><span class="mr-2 text-zinc-500">02</span> Producto C</span><strong>420 €</strong></li>
+              <li class="flex flex-wrap justify-between gap-2 py-3"><span><span class="mr-2 text-zinc-500">03</span> Producto A</span><strong>300 €</strong></li>
+            </ol>
+            <p class="mt-4 border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600"><strong class="text-zinc-900">Plataforma y campaña líderes:</strong> Instagram y Selección del mes, con 40 ventas y 468 € de comisión atribuida.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-6 border-t border-zinc-200 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-4 py-6 text-xs leading-relaxed text-zinc-600 sm:px-6 md:flex-row lg:px-8">
+        <p>órbita. / Informe de ejemplo · Septiembre 2026</p>
+        <p>Datos simulados. No se incluyen métricas de retención o satisfacción.</p>
+      </div>
+    </footer>
+  </body>
+</html>
